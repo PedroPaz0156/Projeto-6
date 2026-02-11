@@ -3,6 +3,7 @@ import DishList from '../../components/DishList'
 import pizza from '../../assets/images/pizza marguerita.png'
 import Header from '../../components/Header'
 import Dish from '../../models/Dish'
+import imagem from '../../assets/images/macarrao.png'
 
 const italiana: Dish[] = [
   {
@@ -52,7 +53,12 @@ const italiana: Dish[] = [
 const Perfil = () => (
   <>
     <Header />
-    <DishList dishes={italiana} />
+    <DishList
+      dishes={italiana}
+      nomePerfil={'La Dolce Vita Trattoria'}
+      categoria={'Italiana'}
+      imagePerfil={imagem}
+    />
   </>
 )
 

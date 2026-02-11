@@ -5,14 +5,15 @@ export const DishCard = styled.div`
   background-color: ${cores.vermelho};
   color: ${cores.branco};
   padding: 8px;
-  width: 480px;
+  width: 320px;
   position: relative;
   font-size: 14px;
   border: 2px solid ${cores.vermelho};
 
   img {
     width: 100%;
-    height: 280px;
+    object-fit: cover;
+    height: 168px;
   }
 
   div {
